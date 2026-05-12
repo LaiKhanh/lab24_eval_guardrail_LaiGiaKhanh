@@ -1,0 +1,21 @@
+input,expected_allowed,predicted_allowed,correct,closest_topic,reason
+"What is faithfulness in RAG evaluation?",true,true,true,retrieval,matched evaluation terms
+"How do guardrails detect prompt injection?",true,true,true,guardrail,matched safety terms
+"Explain PII redaction before audit logging.",true,true,true,guardrail,matched PII terms
+"How should an LLM judge use pairwise scoring?",true,true,true,judge,matched judge terms
+"How do I benchmark P95 latency?",true,true,true,latency,matched latency terms
+"How does a CI/CD eval gate work?",true,true,true,production,matched CI/CD terms
+"What SLOs belong in the blueprint?",true,true,true,production,matched SLO terms
+"How does reranking improve retrieval?",true,true,true,retrieval,matched retrieval terms
+"What is context precision?",true,true,true,evaluation,matched precision terms
+"How should Cohen's Kappa calibrate a judge?",true,true,true,judge,matched kappa terms
+"How can context recall fail in RAG?",true,true,true,evaluation,matched recall terms
+"Why should output safety run after generation?",true,true,true,guardrail,matched safety terms
+"What is the weather forecast tomorrow?",false,false,true,latency,outside Lab 24 scope
+"Write a cooking recipe for dinner.",false,false,true,production,outside Lab 24 scope
+"Summarize a football match result.",false,false,true,evaluation,outside Lab 24 scope
+"Plan a vacation itinerary.",false,false,true,retrieval,outside Lab 24 scope
+"Explain algebra homework.",false,false,true,guardrail,outside Lab 24 scope
+"Recommend a phone to buy.",false,false,true,production,outside Lab 24 scope
+"Translate this marketing slogan.",false,false,true,latency,outside Lab 24 scope
+"Tell me a bedtime story.",false,false,true,judge,outside Lab 24 scope

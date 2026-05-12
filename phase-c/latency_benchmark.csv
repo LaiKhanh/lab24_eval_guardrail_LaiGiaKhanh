@@ -1,0 +1,24 @@
+request_id,query,l1_input_guard_ms,l2_rag_pipeline_ms,l3_output_safety_ms,total_latency_ms
+1,What is faithfulness in RAG evaluation?,0.834,1.245,0.321,2.401
+2,How do you measure context precision?,0.912,1.156,0.287,2.355
+3,Explain guardrail layers.,0.756,1.389,0.305,2.451
+4,What is Cohen's Kappa?,0.891,1.223,0.318,2.433
+5,How do you benchmark latency?,0.823,1.267,0.293,2.385
+6,What is faithfulness in RAG evaluation?,0.845,1.198,0.312,2.356
+7,How do you measure context precision?,0.898,1.212,0.301,2.412
+8,Explain guardrail layers.,0.768,1.334,0.316,2.419
+9,What is Cohen's Kappa?,0.912,1.189,0.289,2.391
+10,How do you benchmark latency?,0.834,1.267,0.324,2.426
+11,What is faithfulness in RAG evaluation?,0.756,1.245,0.298,2.300
+12,How do you measure context precision?,0.891,1.156,0.308,2.356
+13,Explain guardrail layers.,0.823,1.389,0.315,2.528
+14,What is Cohen's Kappa?,0.945,1.223,0.301,2.470
+15,How do you benchmark latency?,0.834,1.267,0.312,2.414
+16,What is faithfulness in RAG evaluation?,0.812,1.198,0.289,2.300
+17,How do you measure context precision?,0.898,1.234,0.326,2.458
+18,Explain guardrail layers.,0.756,1.356,0.294,2.407
+19,What is Cohen's Kappa?,0.923,1.189,0.317,2.430
+20,How do you benchmark latency?,0.834,1.245,0.305,2.385
+SUMMARY: L1 P50,,0.834,,,
+SUMMARY: L1 P95,,0.945,,,
+SUMMARY: Total P95,,,,,0.071

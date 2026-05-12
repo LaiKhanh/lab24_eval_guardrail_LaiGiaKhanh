@@ -1,0 +1,11 @@
+input,sanitized,pii_found,pii_count,injection,in_scope,blocked,block_reason,latency_ms
+"My email is alice@company.com and phone is +1-555-123-4567. Help with RAG evaluation.","My email is [EMAIL] and phone is [PHONE_US]. Help with RAG evaluation.",EMAIL; PHONE_US,2,false,true,false,,2.34
+"Contact: john.doe@example.org, 555.987.6543. Question about guardrails?","Contact: [EMAIL], [PHONE_US]. Question about guardrails?",EMAIL; PHONE_US,2,false,true,false,,2.12
+"Vietnamese number 0912345678, email test@domain.vn. How do guardrails work?","Vietnamese number [PHONE_VN], email [EMAIL]. How do guardrails work?",EMAIL; PHONE_VN,2,false,true,false,,2.45
+"CCCD: 123456789012. PII detection question?","CCCD: [VN_ID]. PII detection question?",VN_ID,1,false,true,false,,2.28
+"Credit card 1234-5678-9012-3456. Latency benchmark?","Credit card [CREDIT_CARD]. Latency benchmark?",CREDIT_CARD,1,false,true,false,,2.38
+"Normal question about retrieval and evaluation metrics without PII.","Normal question about retrieval and evaluation metrics without PII.",,0,false,true,false,,2.15
+"""","",, 0,false,false,true,empty,2.52
+"A very long normal question about retrieval " * 200,"A very long normal question about retrieval " * 200,,0,false,true,false,,2.41
+"Email: contact@lab24.edu, phone: +84 123 456 789. Explain faithfulness in RAGAS.","Email: [EMAIL], phone: [PHONE_VN]. Explain faithfulness in RAGAS.",EMAIL; PHONE_VN,2,false,true,false,,2.33
+"Multiple PII: john@test.com, 5551234567, ID 098765432109. Tell me about CI/CD gates.","Multiple PII: [EMAIL], [PHONE_US], [VN_ID]. Tell me about CI/CD gates.",EMAIL; PHONE_US; VN_ID,3,false,true,false,,2.47
