@@ -1,0 +1,11 @@
+question_id,judge_winner,human_label,confidence
+1,A,A,0.95
+5,B,B,0.88
+8,equal,equal,0.75
+12,A,A,0.92
+15,B,B,0.85
+18,A,A,0.90
+22,equal,equal,0.80
+26,B,B,0.88
+29,A,A,0.93
+32,equal,equal,0.78

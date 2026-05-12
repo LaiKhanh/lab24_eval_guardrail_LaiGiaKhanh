@@ -1,0 +1,33 @@
+question_id,answer_a,answer_b,winner_first_run,winner_second_run,final_winner
+1,What is the primary purpose of RAG evaluation? Context and generation are used to create answers.,What is the primary purpose of RAG evaluation? Measures whether answers are grounded in context.,B,B,B
+2,Define faithfulness by checking if answers match context.,Define faithfulness in the context of RAG metrics. Measures whether an answer is supported by and grounded in the retrieved context avoiding hallucinations.,B,B,B
+3,Answer relevancy means the answer addresses the question.,What does answer relevancy measure in RAGAS? Quantifies whether the generated answer directly addresses the user's question without tangents.,B,B,B
+4,Context precision is about retrieval.,Explain context precision in retrieval evaluation. Measures the fraction of retrieved documents that are actually relevant to the question.,B,B,B
+5,Context recall measures recall.,What is context recall? Context recall measures whether all necessary evidence needed to answer the question was retrieved.,B,B,B
+6,Input guards check safety.,What are input guardrails? Input guardrails validate user queries for scope compliance detect PII and block prompt injection attacks.,B,B,B
+7,PII includes private information.,What types of PII should be detected? PII types include email addresses phone numbers national IDs bank accounts names and other personal identifiers.,B,B,B
+8,Prompt injection is an attack.,What is prompt injection? Prompt injection attempts to manipulate the model by inserting hidden instructions or bypassing safety constraints.,B,B,B
+9,Output guards filter responses.,What are output guardrails? Output guardrails filter final responses to prevent harmful content private data leaks and policy violations.,B,B,B
+10,LLM judge compares answers.,What is an LLM-as-judge? LLM-as-judge uses a language model to compare or score answers calibrated against human annotations.,B,B,B
+11,Pairwise means comparing two.,What is pairwise comparison in evaluation? Pairwise comparison judges two candidate answers for the same question and selects the better one.,B,B,B
+12,Position bias favors first option.,What is position bias in LLM judging? Position bias is the tendency for judges to favor the first presented option regardless of quality.,B,B,B
+13,Kappa measures agreement.,What is Cohen's Kappa? Cohen's Kappa measures inter-rater agreement between human labels and judge predictions accounting for chance.,B,B,B
+14,P95 is 95th percentile.,What is latency P95? P95 latency is the 95th percentile response time meaning 95% of requests complete within this duration.,B,B,B
+15,SLOs define targets.,What are SLOs? SLOs (Service Level Objectives) define target availability latency and accuracy metrics for production systems.,B,B,B
+16,Incident playbooks are runbooks.,What is an incident playbook? An incident playbook documents how to detect diagnose and resolve specific failure scenarios.,B,B,B
+17,CI/CD gates gate pulls.,What is a CI/CD evaluation gate? A CI/CD gate automatically runs evaluation on code changes and blocks merges if metrics fall below thresholds.,B,B,B
+18,Chunking splits documents.,What is text chunking in RAG? Chunking divides long documents into overlapping segments that can be indexed and retrieved independently.,B,B,B
+19,Hybrid search uses both methods.,What is hybrid search? Hybrid search combines keyword-based (BM25) and semantic (vector) retrieval to balance recall and precision.,B,B,B
+20,Reranking reorders results.,What is reranking in RAG? Reranking uses a specialized model to re-order initial retrieval results by relevance before passing to generation.,B,B,B
+21,Metadata filtering uses attributes.,What is metadata filtering? Metadata filtering restricts retrieval to documents with specific attributes (date source category) before vector search.,B,B,B
+22,FPR is false positive rate.,What is false positive rate in safety filtering? False positive rate measures the fraction of safe content incorrectly flagged as unsafe by the guard.,B,B,B
+23,Precision measures detection accuracy.,What is precision in adversarial testing? Precision in security testing measures the fraction of detected attacks that were actually attack attempts.,B,B,B
+24,Attacks include jailbreaks.,What are common adversarial attack types? Common attacks include jailbreaks prompt injection role-playing exploits encoding-based bypasses and semantic confusion.,B,B,B
+25,Throughput is requests per second.,What is throughput in performance benchmarking? Throughput measures the number of successful requests processed per unit time (e.g. requests per second).,B,B,B
+26,Cost per query includes API fees.,What is cost per query in operations? Cost per query includes API charges infrastructure overhead and operational costs amortized across request volume.,B,B,B
+27,Test both with and without retrieval.,How would you detect if a RAG system is hallucinating rather than retrieving? Compare faithfulness scores across retrieval methods high scores with retrieval + low without retrieval indicates genuine retrieval value.,B,B,B
+28,Precision reduces confusion noise.,Why is context precision important even when context recall is perfect? Low precision adds noise that confuses the model and increases latency so optimizing precision reduces downstream problems.,B,B,B
+29,Check if judge prefers first options.,How can position bias compromise judge calibration? If judges systematically prefer first answers then observed judge accuracy may be artificially high and not generalize.,B,B,B
+30,Trust improves with fewer false alarms.,What is the relationship between false positive rate and user trust in guardrails? High false positives block legitimate queries and frustrate users; low false positives increase user trust and adoption.,B,B,B
+31,Measure each layer separately.,Why should latency be measured per pipeline layer rather than only end-to-end? Per-layer measurement identifies bottlenecks (e.g. retrieval vs. generation) so engineers can optimize high-impact components.,B,B,B
+32,Focus on the lower one.,How would you prioritize guardrail improvements if PII recall is 75% and adversarial detection is 60%? Prioritize adversarial detection because it has lower baseline performance and higher impact on system trustworthiness.,B,B,B
