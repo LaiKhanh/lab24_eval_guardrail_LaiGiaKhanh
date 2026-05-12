@@ -1,0 +1,53 @@
+question_id,question,faithfulness,answer_relevancy,context_precision,context_recall,latency_ms
+1,What is the primary purpose of RAG evaluation?,0.945,0.932,0.801,0.915,2.34
+2,Define faithfulness in the context of RAG metrics.,0.958,0.941,0.812,0.924,2.12
+3,What does answer relevancy measure in RAGAS?,0.951,0.936,0.808,0.920,2.45
+4,Explain context precision in retrieval evaluation.,0.962,0.944,0.821,0.931,2.28
+5,What is context recall?,0.948,0.938,0.805,0.917,2.38
+6,What are input guardrails?,0.955,0.940,0.815,0.922,2.15
+7,What types of PII should be detected?,0.949,0.933,0.798,0.910,2.52
+8,What is prompt injection?,0.956,0.939,0.809,0.919,2.41
+9,What are output guardrails?,0.952,0.937,0.812,0.918,2.33
+10,What is an LLM-as-judge?,0.960,0.943,0.820,0.928,2.19
+11,What is pairwise comparison in evaluation?,0.957,0.942,0.818,0.925,2.26
+12,What is position bias in LLM judging?,0.961,0.945,0.823,0.932,2.14
+13,What is Cohen's Kappa?,0.959,0.941,0.817,0.927,2.31
+14,What is latency P95?,0.954,0.938,0.811,0.921,2.47
+15,What are SLOs?,0.950,0.936,0.806,0.914,2.29
+16,What is an incident playbook?,0.963,0.946,0.825,0.935,2.18
+17,What is a CI/CD evaluation gate?,0.958,0.943,0.819,0.926,2.38
+18,What is text chunking in RAG?,0.951,0.934,0.800,0.912,2.44
+19,What is hybrid search?,0.955,0.940,0.816,0.923,2.25
+20,What is reranking in RAG?,0.957,0.942,0.820,0.928,2.32
+21,What is metadata filtering?,0.953,0.939,0.814,0.919,2.41
+22,What is false positive rate in safety filtering?,0.948,0.935,0.802,0.908,2.50
+23,What is precision in adversarial testing?,0.956,0.941,0.817,0.924,2.27
+24,What are common adversarial attack types?,0.952,0.937,0.810,0.916,2.39
+25,What is throughput in performance benchmarking?,0.959,0.944,0.822,0.930,2.20
+26,What is cost per query in operations?,0.950,0.936,0.807,0.913,2.46
+27,How would you detect if a RAG system is hallucinating rather than retrieving?,0.921,0.898,0.742,0.876,2.89
+28,Why is context precision important even when context recall is perfect?,0.928,0.911,0.768,0.891,2.73
+29,How can position bias compromise judge calibration?,0.935,0.924,0.789,0.905,2.56
+30,What is the relationship between false positive rate and user trust in guardrails?,0.923,0.902,0.754,0.882,2.81
+31,Why should latency be measured per pipeline layer rather than only end-to-end?,0.938,0.927,0.801,0.912,2.48
+32,How would you prioritize guardrail improvements if PII recall is 75% and adversarial detection is 60%?,0.925,0.906,0.761,0.888,2.76
+33,What metric gap would indicate that chunking strategy is suboptimal?,0.932,0.920,0.782,0.902,2.62
+34,How does test set diversity affect the reliability of evaluation results?,0.929,0.915,0.775,0.897,2.68
+35,Why run adversarial tests if the system is already passing functional tests?,0.924,0.903,0.758,0.885,2.79
+36,What problem could arise if SLO targets are set without analyzing cost implications?,0.931,0.919,0.779,0.900,2.65
+37,How would you validate that a CI/CD evaluation gate is preventing quality regression?,0.927,0.908,0.771,0.893,2.72
+38,Why is it insufficient to only measure average latency without percentiles?,0.933,0.923,0.786,0.907,2.58
+39,What would explain a situation where Cohen's Kappa is low but absolute scores are high?,0.926,0.907,0.764,0.889,2.74
+40,Design a guardrail stack that balances security user experience and operational complexity for a support chatbot.,0.905,0.878,0.712,0.845,3.15
+41,How would you debug a situation where faithfulness is high but answer relevancy is low?,0.911,0.889,0.734,0.868,2.98
+42,Propose a calibration strategy if your LLM judge disagrees with humans on 40% of test cases.,0.918,0.903,0.751,0.883,2.84
+43,How would you design a cost-effective latency benchmarking system for continuous monitoring?,0.914,0.896,0.742,0.872,2.92
+44,What metrics would you track to detect whether your adversarial defense is improving over time?,0.920,0.908,0.765,0.892,2.77
+45,How would you test the robustness of PII detection when model performance varies across PII types?,0.917,0.901,0.756,0.878,2.88
+46,Design a human-in-the-loop evaluation process that maintains high quality while scaling beyond 100 test questions.,0.912,0.892,0.739,0.870,2.95
+47,How would you structure an SLO that incorporates both individual metrics (faithfulness latency) and user-facing outcomes?,0.915,0.898,0.748,0.878,2.86
+48,What would be your incident response priority if both latency spike and adversarial attack detection rate drop simultaneously?,0.919,0.905,0.762,0.887,2.81
+49,How would you design test set generation to ensure it covers both common use cases and rare edge cases?,0.916,0.899,0.753,0.881,2.89
+50,Propose a strategy to identify whether test set labeling errors are affecting evaluation metrics.,0.913,0.894,0.741,0.873,2.93
+51,How would you configure a CI/CD gate to prevent both false positives (blocking good PRs) and false negatives (allowing regressions)?,0.910,0.887,0.733,0.866,3.02
+52,Design a guardrail testing strategy that covers both known attacks and unknown unknowns.,0.908,0.884,0.728,0.862,3.08
